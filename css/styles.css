@@ -10,7 +10,8 @@ body{
 }
 
 .header{
-    background-color: # ;
+    background-color: #FFFFFF;
+    border: 1px solid #ECECEC;
 }
 .link{
     text-decoration: none;
@@ -20,7 +21,6 @@ body{
     margin: 0 auto;
     width: 1200px;
     padding: 0 15px;
-    outline: 1px solid tomato;
 }
 
 .first-part{
@@ -203,7 +203,15 @@ background-color: #188CE8;
 
 /* Страница Портфолио */
 
+.header.port{
+    margin-bottom: 126px;
+}
 .filter .btn{
+    display: inline-block;
+    min-width: 73px;
+    min-height: 38px;
+    padding: 6px 22px;
+    border-radius: 4px;
     background-color: #F5F4FA;
     border: none;
     color: var(--tittle-color);
@@ -221,11 +229,19 @@ background-color: #188CE8;
     background-color: var(--accent-color);
 }
 
+.filter{
+    margin-bottom: 50px;
+}
+
+.portfolio{
+    margin-bottom: 94px;
+}
 .portfolio .portfolio-item{
     background-color: #FFFFFF;
 }
 
 .portfolio .portfolio-title{
+    margin: 0;
     color: var(--tittle-color);
     font-size: 18px;
     line-height: 2;
@@ -233,6 +249,7 @@ background-color: #188CE8;
 }
 
 .portfolio .portfolio-app{
+    margin: 0;
     color: var(--text-color);
     line-height: 1.88;
 }
