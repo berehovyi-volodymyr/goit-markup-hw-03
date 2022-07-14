@@ -11,7 +11,9 @@ body{
 
 .header{
     background-color: #FFFFFF;
-    border: 1px solid #ECECEC;
+    border-bottom: 1px solid #ECECEC;
+    padding-top: 24px;
+    padding-bottom: 32px;
 }
 .link{
     text-decoration: none;
@@ -41,6 +43,18 @@ ul{
     padding: 0;
 }
 
+.conteiner.all-nav{
+    display: flex;
+    align-items: center;
+}
+.nav{
+    display: flex;
+    margin-left: 93px;
+}
+
+.nav .item:not(:last-child){
+    margin-right: 50px;
+}
 .nav .nav-item{
     color: var(--tittle-color);
     font-weight: 500;
@@ -57,6 +71,14 @@ ul{
     color: var(--accent-color);
 }
 
+.contacts{
+    display: flex;
+    margin-left: auto;
+}
+
+.contacts .item:not(:last-child){
+    margin-right: 50px;
+}
 .contacts .contact{
     color: var(--text-color);
     font-weight: 500;
@@ -118,6 +140,14 @@ background-color: #188CE8;
     display: none;
 }
 
+.feature{
+    display: flex;
+}
+
+.feature .feaure-item:not(:last-child){
+    margin-right: 30px;
+}
+
 .feature .feature-title{
     margin-top: 0;
     margin-bottom: 10px;
@@ -144,15 +174,30 @@ background-color: #188CE8;
 .pictures{
     margin-bottom: 94px;
 }
-.second-bcg{
-    background-color:#F5F4FA;
-    margin-bottom: 94px;
+
+.images{
+    display: flex;
 }
 
+.images .images-item:not(:last-child){
+    margin-right: 30px;
+}
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.second-bcg{
+    background-color:#F5F4FA;
+}
+
+.team{
+    display: flex;
+    justify-content: space-between;
+}
 .team-member{
     background-color: #FFFFFF;
 }
-.image{
+.photo{
     margin-bottom: 30px;
 }
 .team .team-name{
@@ -171,6 +216,8 @@ background-color: #188CE8;
 }
 .black-bcg {
     background-color: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .address{
     margin-top: 20px;
@@ -203,8 +250,8 @@ background-color: #188CE8;
 
 /* Страница Портфолио */
 
-.header.port{
-    margin-bottom: 126px;
+.bcg-portfolio{
+    padding-top: 94px;
 }
 .filter .btn{
     display: inline-block;
@@ -231,17 +278,30 @@ background-color: #188CE8;
 
 .filter{
     margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
 }
 
+.filter .filter-item:not(:last-child){
+    margin-right: 8px;
+}
 .portfolio{
-    margin-bottom: 94px;
+    padding-bottom: 94px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 .portfolio .portfolio-item{
     background-color: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    padding-bottom: 20px;
+    width: calc((100% - 60px) / 3);
 }
 
 .portfolio .portfolio-title{
-    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 0;
+    margin-left: 24px;
     color: var(--tittle-color);
     font-size: 18px;
     line-height: 2;
@@ -249,7 +309,10 @@ background-color: #188CE8;
 }
 
 .portfolio .portfolio-app{
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 24px;
     color: var(--text-color);
     line-height: 1.88;
 }
+
