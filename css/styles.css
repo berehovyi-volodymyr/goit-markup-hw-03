@@ -136,8 +136,17 @@ background-color: #188CE8;
     margin-bottom: 94px;
 }
 
-.title{
-    display: none;
+.visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .feature{
@@ -293,7 +302,7 @@ background-color: #188CE8;
 }
 .portfolio .portfolio-item{
     background-color: #FFFFFF;
-    border: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
     padding-bottom: 20px;
     width: calc((100% - 60px) / 3);
 }
