@@ -247,7 +247,7 @@ background-color: #188CE8;
     line-height: 1.71;
 }
 
-.address .address-item:not(){
+.address .address-item:not(:last-child){
     margin: 0 0 9px 0;
 }
 .address .address-contacts{
