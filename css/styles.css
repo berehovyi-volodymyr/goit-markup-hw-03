@@ -236,8 +236,9 @@ background-color: #188CE8;
     padding-bottom: 60px;
 }
 
-.link.last-part{
+.black-bcg .link.last-part{
     display: block;
+    margin-bottom: 20px;
 }
 .address .location {
     color: #FFFFFF;
